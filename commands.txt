@@ -1,0 +1,80 @@
+    1  git-version
+    2  git -v
+    3  git -version
+    4  git --version
+    5  cd .git
+    6  ls
+    7  cd objects
+    8  ls
+    9  cd 90
+   10  ls
+   11  cd ..
+   12  cd . .
+   13  cd ..
+   14  cd ..
+   15  cd ..
+   16  git status
+   17  git add demofile.txt
+   18  git status
+   19  git  checkout -- demofile.txt
+   20  git status
+   21  git status
+   22  git checkout --demofile.txt
+   23  git checkout -- demofile.txt
+   24  git status
+   25  git reset HEAD demofile.txt
+   26  git status
+   27  git status
+   28  git add demo2.txt
+   29  git status
+   30  git status
+   31  git add demo2.txt
+   32  git status
+   33  git reset HEAD demo2.txt
+   34  git status
+   35  git checkout -- demo2.txt
+   36  git status
+   37  git checkout -- demofile.txt
+   38  git status
+   39  git status
+   40  git checkout -- demo2.txt
+   41  git status
+   42  git log --oneline
+   43  git log
+   44  git checkout caf8503
+   45  git log
+   46  clear
+   47  git checkout master
+   48  git log --oneline
+   49  git checkout 900
+   50  git checkout 900f
+   51  git log --oneline
+   52  git checkout master
+   53  git add remote origin  https://github.com/elizasharon/demorep
+   54  git aemote oadd rigin  https://github.com/elizasharon/demorep
+   55  git armote oadd rigin  https://github.com/elizasharon/demorep
+   56  git remote add origin https://github.com/elizasharon/demorep.git
+   57  git status
+   58  git push -u origin master
+   59  sshkeygen
+   60  ssh-keygen
+   61  ls
+   62  notepad id_rsa.pub
+   63  notepad id_rsa.pub
+   64  cd ~/.ssh/
+   65  notepad id_rsa.pub
+   66  cd ..
+   67  cd c/git-session
+   68  cd C:\git-session
+   69  touch demo3.txt
+   70  git status
+   71  git add demo3.txt
+   72  git push origin master
+   73  git commit -am"direct"
+   74  git push origin master
+   75  git log -oneline
+   76  git log --oneline
+   77  git checkout 900f
+   78  git checkout master
+   79  git push origin master
+   80  history>commands.txt
