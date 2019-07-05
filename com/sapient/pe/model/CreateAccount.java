@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
+import java.util.TreeSet;
 
 public class CreateAccount {
 
@@ -12,7 +13,9 @@ public class CreateAccount {
 		
 		
 		int num=1;
-		List<BankAccount> accts=new ArrayList<>();
+		TreeSet<BankAccount> accts = new TreeSet<BankAccount>(); 
+		//List<BankAccount> accts=new ArrayList<>();
+		/*
 		while(num<3)
 		{
 		System.out.println("Account Creation");
@@ -88,21 +91,54 @@ public class CreateAccount {
 		num++;
 		}
 		
+		*/
 		
-		Iterator iterator = accts.iterator(); 
+		
+		
+		Address addr;
+		addr=new Address("ygftudr","jxdfghj","fghkj");
+		Person pr;
+		pr=new Person(5,"fh","a",1,"gh","dfhg",addr);
+		BankAccount acc;
+		acc=new Savings(pr,"savings");
+		accts.add(acc);
+		
+		
+		pr=new Person(6,"fh","b",2,"gh","dfhg",addr);
+		acc=new Savings(pr,"current");
+		accts.add(acc);
+		
+		pr=new Person(7,"fh","c",2,"gh","dfhg",addr);
+		acc=new Savings(pr,"salary");
+		accts.add(acc);
+		
+		
+		
+		
+		
+		
+		Iterator<BankAccount> it = accts.iterator(); 
+		
+		System.out.println("List elements : ");
+		while(it.hasNext())
+		{
+			BankAccount temp=it.next();
+			temp.getAccount();
+		}
+			
 		  
-        System.out.println("List elements : ");
+        
         
       //  while (iterator.hasNext()) 
          //   System.out.print(iterator.next() + " "); 
         
-        BankAccount acc1;
+      /*  BankAccount acc1;
         for(int i=0;i<accts.size();i++){
         	acc1=accts.get(i);
         	acc1.getAccount();
             
         } 
-  
+  */
 
 	}
 

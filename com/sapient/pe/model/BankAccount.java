@@ -1,12 +1,14 @@
 package com.sapient.pe.model;
 
+import java.util.Comparator;
+
 /*enum AccountType {
 	SAVINGS_ACCOUNT,
 	CURRENT_ACCOUNT,
 	SALARY_ACCOUNT,
 }
 */
-public class BankAccount {
+public class BankAccount implements Comparable<BankAccount>{
 	
 	
 
@@ -76,6 +78,15 @@ public class BankAccount {
 		System.out.println("Account Number: "+this.account_number);
 		System.out.println("Balance: "+this.balance);
 		this.person.getPerson();
+	}
+
+	
+	@Override
+	public int compareTo(BankAccount arg0) {
+		// TODO Auto-generated method stub
+		
+		//return Integer.valueOf(o1.getAccount_number()).compareTo(o2.getAccount_number());
+		return Integer.valueOf(arg0.account_number).compareTo(this.account_number);
 	}
 	
 	

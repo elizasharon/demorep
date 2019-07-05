@@ -73,11 +73,11 @@ public class Person {
 	{
 		System.out.println("Name: "+this.name);
 		System.out.println("Age: "+this.age);
-		System.out.println("marital Status: "+this.marital_status);
-		System.out.println("email: "+this.email);
-		System.out.println("gender: "+this.gender);
-		System.out.println("Aadhar Number: "+this.aadhar_number);
-		this.addr.getAddress();
+		//System.out.println("marital Status: "+this.marital_status);
+		//System.out.println("email: "+this.email);
+		//System.out.println("gender: "+this.gender);
+		//System.out.println("Aadhar Number: "+this.aadhar_number);
+		//this.addr.getAddress();
 		
 	}
 	
